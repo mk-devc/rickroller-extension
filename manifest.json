@@ -1,0 +1,26 @@
+{
+    "name": "Rick Roller",
+    "version": "0.1.0",
+    "description": "Rick Roll your friends",
+    "permissions": ["storage", "tabs","scripting"],
+    "host_permissions": ["<all_urls>"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["contentScript.js"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": [
+        ],
+        "matches": ["<all_urls>"]
+      }
+    ],
+    "action": {
+      "default_title": "Rick Roller",
+      "default_popup": "popup.html"
+    },
+
+    "manifest_version": 3
+  }
